@@ -1,0 +1,71 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/2567407439.js" crossorigin="anonymous"></script>
+    
+    <title>Contacto</title>
+</head>
+
+<body>
+  <header>             
+    <nav class="nav oNav">
+        <ul class="nav__ul">
+            <li class="nav__li"><i class="fa-solid fa-home"></i><a href="index.html">Inicio</a></li>
+            <li class="nav__li"><i class="fa-solid fa-paintbrush"></i><a href="obras.html">Obras</a></li>
+            <li class="nav__li"><i class="fa-solid fa-user"></i><a href="bio.html"></i>Biografia</a></li>
+            <!--<li class="nav__li"><i class="fa-solid fa-envelope"></i></i><a href="contacto.html">Contacto</a></li>-->              
+        </ul>                       
+    </nav>    
+</header>  
+      
+  <main class="cMain">
+        <section class="cSectionUno">           
+            <p class="cSectionUno__p-especial"> Estimado/a: <strong id="cSectionUno_cambio">usuario/a</strong> Me encanta leerte. Tu opinion es importante.</p>
+            <p> Espero comentarios, ideas, dudas, consultas. Criticas! Cualquier comentario es bienvenido! No te olvides de dejarme tus datos para mantener el contacto. Ingresa tu direccion de correo y te mantendre informada de novedades, curiosidades y ofertas del mundo del arte decorativo. Sumate a nuestra comunidad! </p>                               
+            <audio src= "musica.mp3" type="audio/mpeg" controls></audio>
+            <ul>
+                <li><a href="https://www.facebook.com/monicagodfroitartedecorativo" target="_blank"><i class="fa-brands fa-facebook-square"></i></a></li>
+                <li><a href="https://www.instagram.com/monicagodfroitartedecorativo/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a></li>
+                <li><a href="https://www.youtube.com/c/monicagodfroit" target="_blank"><i class="fa-brands fa-youtube-square"></i></a></li>                
+            </ul>
+        </section>
+                           
+
+        <section class="cSectionDos">
+            <form >
+                Nombre: <br><input id="inpNombre" type="text" name="nombre" placeholder="coloca tu nombre"> <br>
+                Apellido: <br> <input type="text" name="apellido" placeholder="coloca tu apellido"> <br>
+                Email: <br><input type="email" name="email" placeholder="coloca tu email"> <br>
+                Selecciona tu perfil : <br> <select name="eleccionUsuario" id="eleccionUsuario">
+                    <option value="docente">docente de arte </option>
+                    <option value="alumno"> alumno / estudiante </option>
+                    <option value="amateour"> interesado en arte </option>
+                    <option value="trabajador"> emprendora/ profesional </option>
+                    </select> <br>
+                Deja tu comentario: <br><textarea name="Deja tu comentario:" id="comentarioUsuario" cols="30" rows="10"></textarea> <br> <br>
+                <input id="inpBoton" type="submit" value="enviar">
+                <input type="submit" value="cancelar">
+            </form>
+        </section>        
+            
+                             
+  </main>
+
+  <footer class="footer">
+    <div class="footer__div"> <strong>Trabajo Final.</strong> Diseño & Desarrollo-Web  @natalia.arcaro </div>
+  </footer>
+  
+  <script src="animacionContacto.js"></script>
+
+</body>
+
+</html>
