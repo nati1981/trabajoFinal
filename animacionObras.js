@@ -1,8 +1,8 @@
-document.getElementById("fichaTecnicaUno").innerHTML = "Nombre de la Obra: Mujer"
+document.getElementById("fichaTecnicaUno").innerHTML = "Nombre de la Obra: Hombre Medieval"
 
-document.getElementById("fichaTecnicaDos").innerHTML = "Nombre de la Obra: Hombre medieval";
+document.getElementById("fichaTecnicaDos").innerHTML = "Nombre de la Obra: Corazon";
 
-document.getElementById("fichaTecnicaTres").innerHTML = "Nombre de la Obra: Corazon";
+
 
 
 
