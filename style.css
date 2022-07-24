@@ -1,3 +1,17 @@
+/* Referencias 
+
+   - Codigo comun para footer y nav
+
+   - Codigo especifico por pagina:
+   i = index.html (iMain, iSection, etc)
+   b = bio.html (bMain, bSection, bAside, etc)
+   c = contacto.html (cMain, cSection, etc)
+   l = clases.html (lMain, lSection, etc)
+   o = obras.html (oMain, oSection, etc)  
+
+*/
+
+
 *{
     padding: 0%;
     margin: 0%;
@@ -74,14 +88,22 @@
     background-image:url(./Imagenes/fondoFlores.jpg); 
     background-size: 100%;
          
+} 
+
+.iMain{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
 
+.iSectionUno{
+    grid-column: 1 / 7;
+    text-align: center; 
 
+}
 
 .iSectionUno h1{
     font-family:'Mrs Saint Delafield', cursive;
-    font-size: 900%;
-    text-align: center;
+    font-size: 150px;
     text-shadow: 9px 9px 9px #999;
     color: #4B4B4B;
     
@@ -90,35 +112,54 @@
 
 .iSectionUno h2{
     font-family:'Montserrat', sans-serif;
-    text-align: center;
     text-shadow: 9px 9px 9px #999;
     color: #4B4B4B;
-    font-size: xx-large;
     position: relative;
-    top: -70;
+    font-size: 45px;
+    top: -80;
+    right: 85;
    
 }
 
 .iSectionDos{
-    padding-left: 10%;
-    padding-right: 10%;
+   grid-column: 1 / 4;
+   text-align: right;
+   padding-bottom: 10%;
+  
 }
+
+.iSectionDos img{
+    width: 70%;
+    border-radius: 50%;
+    border: rgb(128, 195, 173) 3px solid;
+    padding: 2%;
+}
+
+.iSectionTres{
+    grid-column: 4 / 7 ;
+    text-align: center;
+    width: 70%;
+  
+}
+
     
-.iSectionDos p{
+.iSectionTres p{
     font-family:'Montserrat', sans-serif;
     text-align: center;
     color: #4B4B4B;
+    font-size: bold;
     font-size: xx-large;
-    font-size: bold;  
+    padding-left: 10%; 
+    
+       
 }
     
-.iSectionDos h2{
+.iSectionTres h2{
     font-family:'Mrs Saint Delafield', cursive;
-    font-size: 600%;
     text-align: center;
+    font-size:70px ;
     text-shadow: 9px 9px 9px #999;
     color: #4B4B4B;
-    padding-bottom: 20%;
     animation: movimiento 2.5s linear infinite;
 
 }
@@ -144,38 +185,37 @@
 
 @media(max-width:600px){
 
-.fondo{
-    background-image: none;
-    
-}
-    
-.iSectionUno h1{
-    font-size: 550%;
-         
-}
-
-.iSectionUno h2{
-    top: -45;
-    right: 35;   
+    .fondo{
+        background-size: 450%;
+       
     }
 
-.iSectionDos{
-    grid-column: 1 / 4; 
-       
+    
+    .iSectionUno h1{
+        font-size: 600%;
+          
+    }
+
+    .iSectionUno h2{
+        font-size: 30px;
+        top: -45;
+        right: 35;
+    }
+   
+    .iSectionDos{
+        grid-column: 1 / 7;
+        text-align: center;
     } 
-    
-.iSectionDos h2{
-    font-size: 500%;  
-    
-}
 
-.iAside{
-    grid-column: 1 / 4;
-    margin: 0 auto;
-    top: -60 ;
-    margin-top: 10%;
-    }
-       
+    .iSectionTres {
+        grid-column: 1 / 7;
+        text-align: center;
+        font-size: small;
+        font-weight: bold;
+        width: 90%;
+
+    }   
+      
          
 }
 
