@@ -233,7 +233,6 @@
     height: 120px;
     background-color: rgba(250, 235, 215, 0.615);
     position: fixed;
-    text-decoration-line: none;
     left: 3%;
     border-radius: 3%;
     font-family: 'Montserrat', sans-serif;
@@ -247,16 +246,11 @@
     color: #4B4B4B;
 }
 
-.oSticky img{
-    width: 90px;
-    position: relative;
-    top: -20px;
-}
 
 .oSectionUno{
-    grid-column: 1 / 5;
+    grid-column: 1 / 4;
     text-align: center;  
-          
+    
 }
 
 .oSectionUno img{
@@ -266,15 +260,15 @@
  
 
 .oAside{
-    grid-column: 5 / 7 ;
+    grid-column: 4 / 7 ;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin-right: 10%;
+    /* margin-right: 10%; */
     position: relative;
     top: 5%; 
     height: fit-content;
     color: black;
-   
+    
 }
 
 
@@ -314,7 +308,7 @@
 
 .oSectionDos-obra{
     padding: 20px;
-    font-family:'Montserrat', sans-serif;
+    font-family: sans-serif;
     font-size: bold;
     height: 80%;
     
@@ -325,6 +319,7 @@
 
 .oMain{
     display: block;
+    
 }      
 
 
@@ -335,12 +330,6 @@
     left: 1%;
 }
       
-.oSticky img{
-    width: 30px;
-    position: relative;
-    top: -20px;
-}
-
 
 .oSectionUno img{
     width: 60%;
@@ -350,11 +339,16 @@
 }
 
 .oAside{
+   
     text-align: center;
+   
+   
+    
 }
 
 .oSectionDos img{
     width: 130px;
+    padding: 0%;
       
 }
 
@@ -365,12 +359,12 @@
 
 .bSectionUno{
     display: grid;
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(4, 1fr)
     
 }
 
 .bSectionUno-DivUno{
-    grid-column: 1 / 3;
+    grid-column: 1 /3 ;
     width: 80%;
     margin: 0 auto;
     
@@ -383,7 +377,7 @@
 
 
 .bSectionUno-DivDos{
-    grid-column: 3 / 4;
+    grid-column: 3 / 5;
     width: 90%;
     margin: 0 auto;
     margin-top: 5%;
@@ -397,7 +391,6 @@
 .bSectionUno-DivDos h3{
     background-color: rgb(270, 232, 220);
     margin-bottom: 3%;
-    border: outset  3px;
     font-weight: bold;
 }
 
@@ -444,16 +437,17 @@
 }
 
 @media(max-width:600px){    
-    .bSectionUno-DivUno{
-        grid-column: 1 / 4
+    .bSectionUno{
+        display: block;
     }
-
-    .bSectionUno-DivDos{
-        grid-column: 1 / 4
+    
+    .bSectionUno-DivUno img{
+        width:400px;
+        
     }
 
     .bSectionDos img{
-        width: 400px;
+        width: 300px;
       
     }
 
@@ -485,6 +479,7 @@
     font-weight: bold;
     font-size: x-large;
     padding: 1%;
+   
         
 }
 
@@ -568,12 +563,15 @@
     text-align: left;
     font-weight: bold;   
     font-size: large;
+   
     
 }
 
 .lSectionUno h1 {
     margin-top: 2%;
     font-size: xx-large;
+    background-color: #fdcae1;
+    margin-right: 10%;
 }
 
 .lSectionUno a{
